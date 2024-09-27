@@ -1,0 +1,25 @@
+# Archivo top.pcf: Asignación de pines para FPGA iCE40
+# Asignaciones de entradas
+
+set_io clk 60         # Asigna la señal clk al pin 21
+
+set_io pwmmd 52
+set_io pwmmi 10
+
+
+set_io -pullup yes DL 29   
+set_io -pullup yes DI 33 
+set_io -pullup yes DD 34
+
+set_io m1r 19     # motor1 atras
+set_io m1d 21  #motor1 adelante
+
+set_io m2r 23    # motor2atras
+set_io m2d 26 #motor2adelante
+
+
+# Asignaciones de salidas
+#set_io s9 20      # Asigna la señal out1 al pin 25
+#set_io s3 23    # Asigna la señal out2 al pin 26
+#set_io s0 24
+#set_io s1 21
